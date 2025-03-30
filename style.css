@@ -71,6 +71,7 @@
     
 }
 
+
 .lista-Itens{
     margin-top: 10% !important;
     width: 100%;
@@ -218,6 +219,7 @@
 
 h2{
     font-family: textoTitulo;
+    border-bottom: 2px #810000 solid;
     font-size: clamp(1rem,8vw,3rem);
 }
 
@@ -253,28 +255,93 @@ h2{
 }
 
 
-.informacoes-desconto{
+.informacoes-Desconto{
     height: auto;
-    margin-top: 10% !important;
+    margin-top: 5% !important;
 
-    .botoes{
-        display: flex;
+    .btn-group-sm{
+        display:flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        font-family: fontTitulo;
+        font-weight: bold;
+        
+    
         .btn{
-            min-width:5rem;
-            height: 2rem;
+            padding: 0;
+            width: 31vw!important;
+            height: auto;
             text-align: center;
             align-items: center;
             border-radius: 0 !important;
             border:none !important;
             color: black;
+            font-size: 1.2rem;
         }
         .btn-check:checked + .btn {
-          background-color: #810000;
+           
+            border-bottom: 2px solid #810000 !important;
         }
     }
 
     
+}
+
+#carouselExample {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 250px;
+    background-color: rgb(247, 247, 247);
+}
+
+#carouselExample .carousel-inner {
+    display: flex;
+    align-items: center; 
+    
+}
+
+#carouselExample .carousel-item img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: contain;
+}
+
+.informacoes-pessoa-carrousel{
+        display: flex;
+        height: 70vh!important;
+        background-color: #810000;
+        align-items: center;
+       
+        padding: 50px;
+        color: white;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        gap: 100vh !important;
+        
+
+}
+
+
+
+#carousel-Pessoa {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh!important;
+    
+}
+.svg-pessoa{
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.image-Pessoa{
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
 }
