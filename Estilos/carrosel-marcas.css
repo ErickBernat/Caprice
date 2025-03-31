@@ -1,0 +1,21 @@
+
+
+#carouselExample {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 250px;
+    background-color: rgb(247, 247, 247);
+}
+
+#carouselExample .carousel-inner {
+    display: flex;
+    align-items: center; 
+    
+}
+
+#carouselExample .carousel-item img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: contain;
+}
