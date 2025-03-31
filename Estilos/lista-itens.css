@@ -1,5 +1,7 @@
 
-
+.produtos-container{
+    width: 90vw;
+}
 h2{
     font-family: textoTitulo;
     border-bottom: 2px #810000 solid;
@@ -68,4 +70,53 @@ h2{
 .card-menu{
     width: 1rem;
     background-color: #810000;
+}
+
+@media screen and (min-width:990px) {
+    .produtos-container{
+        width: 80vw !important;
+    }
+
+    h2{
+        font-family: textoTitulo;
+        border-bottom: 2px #810000 solid;
+        font-size:60px !important;
+    }
+
+
+    .btn-group-ms{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-family: fontTexto;
+        font-weight: bold;
+        
+    
+        .btn{
+            width:140px!important ;
+            height: auto;
+            padding: 8px!important;
+            text-align: center;
+            align-items: center;
+            border-radius: 0 !important;
+            border:1px solid #d2d2d2  !important;
+            color: black;
+        }
+        .btn-check:checked + .btn {
+            background-color: #810000 !important;
+            color: white !important;
+            border-color: #810000 !important;
+        }
+
+        .btn:hover{
+            background-color: #810000 !important;
+            color: white;
+        }
+
+
+    }
+
 }

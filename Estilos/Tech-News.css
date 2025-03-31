@@ -1,0 +1,119 @@
+
+
+.container-tech-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 50px !important;
+}
+
+.itens-tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px!important;
+    gap: 20px;
+
+    img{
+        max-width: 500px;
+        width:100% !important;
+        height: auto;
+    }
+}
+
+.titulo-h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%!important;
+    font-family: fontTitulo;
+    text-align: center !important;
+    
+    h2{
+        width: 50vw;
+        font-family: textoTitulo;
+        border-bottom: 2px #810000 solid;
+        font-size: clamp(1rem,8vw,3rem);
+        padding-bottom: 10px;
+    }
+
+}
+
+.informacoes-tech{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    font-family: fontTitulo;
+    gap: 10px;
+
+
+    button{
+        font-family: fontBold;
+        font-weight: bold;
+        font-size: 0.9rem;
+        border:2px solid black;
+        background-color: transparent;
+        width: 100px;
+        padding: 6px;
+    }
+}
+
+
+@media screen and (min-width:990px) {
+    .itens-tech{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 30px!important;
+        gap: 20px;
+    
+        img{
+            max-width: 500px;
+            width:100% !important;
+            height: auto;
+        }
+        h6{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+
+    
+
+    .informacoes-tech{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+    
+        font-family: fontTitulo;
+        gap: 10px;
+    
+    
+        button{
+            font-family: fontBold;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border:2px solid black;
+            background-color: transparent;
+            width: 140px;
+            height: auto;
+            padding: 6px;
+        }
+    }
+
+
+.container-tech-grid{
+    display: flex;
+    flex-direction: row!important;
+    gap: 50px !important;
+}
+}

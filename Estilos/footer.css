@@ -1,0 +1,56 @@
+.container-footer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #0d0d0d;
+color:white;
+
+
+h5{
+    font-family: fontTitulo;
+}
+
+ul{
+    font-family: fontTexto;
+    font-weight: 500;
+    padding: 0;
+    list-style: none;
+}
+
+}
+
+.container-itens-footer{
+   display: flex;
+   gap: 30px!important;
+}
+
+.imagem-logo-footer{
+    margin-top:50px !important;
+}
+
+.Lista-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center!important;
+    margin: 0;
+    padding: 0;
+    gap: 10px!important;
+
+    
+}
+
+.texto-final-footer{
+    border-top: 1px solid gray;
+    margin-top: 20px!important;
+    width: 80vw!important;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.itens-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
