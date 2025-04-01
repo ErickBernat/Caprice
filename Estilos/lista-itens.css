@@ -44,7 +44,7 @@ h2{
 }
 
 .lista-Itens{
-    margin-top: 10% !important;
+    margin-top: 5% !important;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -74,13 +74,24 @@ h2{
 
 @media screen and (min-width:990px) {
     .produtos-container{
-        width: 80vw !important;
+        width: 85vw !important;
+    }
+
+    .texto-card{
+        font-family: textoTitulo!important;
+        padding: 1vh 0vh;
+        h6{
+            font-size: 0.9rem!important;
+            width: 11vw;
+            margin: 0;
+        }
+        
     }
 
     h2{
         font-family: textoTitulo;
         border-bottom: 2px #810000 solid;
-        font-size:60px !important;
+        font-size:clamp(1rem,3vw,4rem) !important;
     }
 
 
@@ -96,7 +107,8 @@ h2{
         
     
         .btn{
-            width:140px!important ;
+            font-size:clamp(0.7rem,0.9vw,3rem)!important ; ;
+            width:clamp(1rem,8vw,9rem)!important ;
             height: auto;
             padding: 8px!important;
             text-align: center;

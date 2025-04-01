@@ -44,8 +44,6 @@
     padding: 0;
 
     img{
-        margin-right: 10vw!important;
-        width: 25vh;
         height: auto;
     }
 }
@@ -68,7 +66,7 @@
     }
 
     h4{
-        font-size: 2rem;
+        font-size: clamp(0.7rem,1.5rem,1.6rem);
     }
 }
 .telefone-itens {
@@ -82,10 +80,11 @@
 }
 
 .container-nav-2-itens{
-    width: 80vw;
+    width: 85vw;
+    gap: 2vw;
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -101,7 +100,7 @@
     margin: 0;
 }
 .container-nav-3{
-    width: 80vw;
+    width: 85vw;
     height: 10vh;
     display: flex!important;
     justify-content: center!important;
@@ -163,25 +162,28 @@
 .redes-container{
     display: none!important;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
+    align-items: center !important;
+    justify-content: center!important;
     background-color: white!important;
 }
 .icons-redes{
+    width: 23vw;
     display: flex;
     flex-direction: row;
     gap: 1vw;
 }
 .redes{
+    width: 85vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 25vw;
+    justify-content: space-between;
 
     h4{
+        width: 23vw;
+        text-align: center;
         font-family: textoTitulo;
+        font-size: clamp(0.7rem,1rem,1.6rem)!important;
         margin: 0;
        
         span{
@@ -194,11 +196,14 @@
     }
 
 .dropdowns-redes{
+    width: 23vw;
     display: flex;
+    align-items: end;
+    justify-content: end;
     flex-direction: row;
     gap: 15px;
     button{
-        font-size: 15px;
+        font-size: 0.7rem;
         font-weight: bold;
         border: none;
         padding: 5px;
@@ -210,7 +215,7 @@
 
 .icons-sumir-desktop{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
 }
@@ -223,6 +228,7 @@
 @media screen and (min-width:990px) {
     .container-telefone{
         display: flex;
+        width: 20vw;
     }
 
     .icons-sumir-desktop{
@@ -231,21 +237,26 @@
 
     .container-nav-2{
         display: flex;
-        height:15vh;
+        height:20vh;
         align-items: center;
         justify-content: center;
+
+        img{
+            margin-right: 17%!important;
+        }
     }
     .botao-hamburguer{
         background-color: #810000;
         border-radius: 50%;
-        padding: 10px;
-        width: 60px;
+        padding: 0.8vw;
+        width: clamp(1rem,3.5vw,4rem);
         height: auto;
         outline: none !important;
     }
 
     .redes-container{
-        display: block!important;
+        display: flex!important;
+        
     }
 
     .navbar-container {
@@ -262,27 +273,27 @@
 
     .container-nav-3{
         width: 100vw;
-        height: 8vh;
+        height: auto;
         display: flex!important;
         justify-content: center!important;
         align-items: center!important;
         background-color: #810000;
         
-        padding: 0;
+        padding: 2vh 0px;
         margin: 0;
 
         
     }
 
     .nav-3-itens{
-        width: 80vw!important;
+        width: 85vw!important;
         gap: 30px;
         display: flex;
         flex-direction: row;
         margin: 0;
         padding: 0;
         svg{
-            width: 30px;
+            width: 1.5vw;
             height: auto;
             fill: white;
         }
@@ -293,20 +304,27 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 15px;
+        gap: 2vw;
         justify-content: start;
 
         .dropdown{
             
             button{
+                display: flex;
                 font-family: fonttexto;
                 font-weight: bold;
                 background-color: transparent;
                 border: none;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-size:clamp(0.5rem,0.7rem,1.5rem)!important; ;
+                letter-spacing: 0.2vw;
                 border-radius: 0!important;
                 text-transform: uppercase;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 color: white;
+                width: 4vw;
             }
             button:hover{
                 border-bottom: 3px solid white;
@@ -317,14 +335,20 @@
 
     .nav-input{
         display: flex;
-        gap: 20px;
+        gap: 0.1vw;
 
         input{
-            width: 250px!important;
+            font-family: fontTexto;
+            font-size: clamp(0.5rem,0.8rem,1.5rem)!important;
+            font-weight:700 ;
+            width: 11vw!important;
             border:none;
             background-color: transparent;
             color:white !important;
             outline: none;
+        }
+        input::placeholder{
+            color: white;
         }
 
         
@@ -337,24 +361,24 @@
     }
     
     .drop-nav{
-        width: 25%!important;
+        width: 30vw!important;
         text-align: start!important;
         border-radius: 0 !important;
-        height: 6vh;
+        height: 10vh;
         font-family: fontTitulo;
         button{
             display: flex;
             flex-direction: row;
             align-items: center;
             font-family: fontTitulo;
-            font-size: 30px;
+            font-size: 1.2rem;
             justify-content: space-between;
             border-radius: 0 !important;
             background-color: #0d0d0d !important;
             border: none;
         }
         svg{
-            width: 50px;
+            width: 2vw;
             height: auto;
         }
     

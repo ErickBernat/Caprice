@@ -1,601 +1,654 @@
 <html lang="pt-br">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Caprice</title>
-      <link rel="stylesheet" href="/Bootstrap/bootstrap.css">
-      <link rel="stylesheet" href="/Bootstrap/bootstrap-icons.svg">
-      <link rel="stylesheet" href="/style.css">
-  </head>
-  <body  onload="carregaListaItens()">
-      <header>
-          <div class="header-container container-fluid m-1">
-  
-              <div class=" header-container-itens  " >
-                
-                  <div class="navbar navbar-container d-flex flex-column ">
-                    <div class="container-fluid redes-container">
-                      <div class="redes ">
-                          <div class="icons-redes">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                          </svg>
-      
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto"  fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto"  fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto"  fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z"/>
-                          </svg>
-                          </div>
-                          <div class="texto-redes">
-                            <h4 class="fs-5 ">
-                              Free delivery - <span>On all orders over $50</span>
-                          </h4>
-                          </div>
-                          <div>
-                            <div class="dropdowns-redes">
-                              <div class="btn-group">
-                                  <button class="btn btn-secondary btn-sm dropdown-toggle "  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      USD
-                                  </button>
-                                  <ul class="dropdown-menu ">
-                                      <li><a class="dropdown-item" href="#">USD</a></li>
-                                      <li><a class="dropdown-item" href="#">EUR</a></li>
-                                      <li><a class="dropdown-item" href="#">GBP</a></li>
-                                  </ul>
-                              </div>
-                              <div class="btn-group">
-                                  <button class="btn btn-secondary btn-sm dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      ENGLISH
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">ENGLISH</a></li>
-                                      <li><a class="dropdown-item" href="#">FRANCE</a></li>
-                                      <li><a class="dropdown-item" href="#">GERMANY</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid container-nav-2" >
-                      <div class="container-nav-2-itens">
-                        <div class="container-telefone">
-                          <div class="telefone-itens  d-flex p-3 border-0 around-6 justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                            </svg>
-                        </div>
-                        <h4 class="text-white " style="font-weight: bold;">+12.345.254.89</h4>
-                        </div>
-                        <img  src="./Assets/Images/logo.png" alt="">
-                        <div class="icons-nav-2">
-                          <div class="icons-sumir-desktop">
-                            <button class=" bg-transparent border-0 ">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
-                                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                </svg>
-                          </button>
-                          <button class=" bg-transparent border-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
-                            </svg>
-                          </button>
-                          </div>
-                          
-                          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <svg class="botao-hamburguer" xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                            </svg>
-                          </button>
-                          
-                        </div>
-                        
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                          <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                          </div>
-                          <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li>
-                                    <hr class="dropdown-divider">
-                                  </li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <form class="d-flex mt-3" role="search">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid container-nav-3">
-                      <div class="container-fluid nav-3-itens">
-                        <div class="btn-group drop-nav">
-                          <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                            </svg>
-                          </button>
-                          
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Computer</a></li>
-                            <li><a class="dropdown-item" href="#">Accessories</a></li>
-                            <li><a class="dropdown-item" href="#">Casual Fashion</a></li>
-                            <li><a class="dropdown-item" href="#">Chic Fashion</a></li>
-                            <li><a class="dropdown-item" href="#">Artsy Fashion</a></li>
-                            <li><a class="dropdown-item" href="#">Preppy Fashion</a></li>
-                            <li><a class="dropdown-item" href="#">Sophisticated</a></li>
-                          </ul>
-                        </div>
-                        <div class="links-drops">
-                          <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Home
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item active" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Pages
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item active" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Shop
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item active" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn btn-secondary  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Blog
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item active" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Contact
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item active" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                        </div>
 
-                        <div class="nav-input">
-                          <input  type="text" class=" " placeholder="Search products..." aria-label="Username" aria-describedby="basic-addon1">
-                          <button class=" bg-transparent border-0">
-                          <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                            </svg>
-                          </button>
-                      </div>
-                   
-                      <button class=" bg-transparent border-0">
-                          <svg xmlns="http://www.w3.org/2000/svg" wfill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                            </svg>
-                      </button>
-                      <button class=" bg-transparent border-0">
-                      <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                      </svg>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caprice</title>
+  <link rel="stylesheet" href="/Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/Bootstrap/bootstrap-icons.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
 
-                        </div>
-                    </div>
-                      
-                    </div>
-                   
-                      
-                </div>
+<body onload="carregaListaItens()">
+  <header>
+    <div class="header-container container-fluid m-1">
+
+      <div class=" header-container-itens  ">
+
+        <div class="navbar navbar-container d-flex flex-column ">
+          <div class="container-fluid redes-container">
+            <div class="redes ">
+              <div class="icons-redes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                  class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                  class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                  class="bi bi-dribbble" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" />
+                </svg>
               </div>
-      </header>
-      <main >
-        <section >
-          <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner ">
-              <div class="carousel-item active">
-                <div class="carrosel-item-1">
-                  <div class="texto">
-                  <h1>Have It Your Way</h1>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                    quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.</p>
-                  <button type="button" class="btn btn-primary botao-carrosel">Shop now</button>
+              <div class="texto-redes">
+                <h4 class="fs-5 ">
+                  Free delivery - <span>On all orders over $50</span>
+                </h4>
+              </div>
+              <div>
+                <div class="dropdowns-redes">
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      USD
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">USD</a></li>
+                      <li><a class="dropdown-item" href="#">EUR</a></li>
+                      <li><a class="dropdown-item" href="#">GBP</a></li>
+                    </ul>
                   </div>
-                  
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carrosel-item-2">
-                  <div class="texto">
-                  <h1>There is no Substitute</h1>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo.</p>
-                  <button type="button" class="btn btn-primary botao-carrosel">Shop now</button>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section>
-        <section >
-          <div class="container-fluid lista-Itens  p-0 m-0">
-              <div class="container-fluid d-flex align-itens-center justify-content-center">
-                <h2>Latest Products</h2>
-              </div>
-  
-              <div class="container-fluid">
-                <div class="btn-group-ms" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" checked="">
-                  <label class="btn " for="btnradio1">All</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn " for="btnradio2">Sophisticated</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                  <label class="btn " for="btnradio3">Preppy</label>
-  
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                  <label class="btn " for="btnradio4">Artsy</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                  <label class="btn" for="btnradio5">Bohemian</label>
-                
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                  <label class="btn " for="btnradio6">Casual</label>
-                </div>
-              </div>
-              <div class="produtos-container">
-                <div id="listaItens" class="lista-Itens-Cards row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-6">
-               
-                </div>
-              </div>
-              
-        </section>
-        <section>
-          <div class="container-fluid carrosel-modelos  p-0 m-0">
-              <div class="container-fluid d-flex align-itens-center justify-content-center">
-                <h2>Featured Categories</h2>
-          </div>
-          <div class="container-fluid m-0 p-0 d-flex flex-row justify-content-center align-itens-center fundo-carrosel">
-            <div id="carouselModelos" class="carousel slide carouselModelos ">
-              <div class="carousel-inner-modelos ">
-                <div class="carousel-item carousel-item-modelos active ">
-                  <div class="carousel-modelos-item">
-                    
-                   
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      ENGLISH
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                      <li><a class="dropdown-item" href="#">FRANCE</a></li>
+                      <li><a class="dropdown-item" href="#">GERMANY</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="carousel-item carousel-item-modelos">
-                  <div class="carousel-modelos-item">
-                    <div class="item-modelo-carrosel">
-
-                    </div>
-                   
-                  </div>
-                </div>
-                
               </div>
             </div>
           </div>
-  
-  
-          </div>
-        </section>
-        <section>
-            <div class="container-fluid informacoes-empresa row row-cols row-cols-sm-2 row-cols-md-3  row-cols-lg-4">
-              
-                <div class="informacoes-empresa-container">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
-                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+          <div class="container-fluid container-nav-2">
+            <div class="container-nav-2-itens">
+              <div class="container-telefone">
+                <div class="telefone-itens  d-flex p-3 border-0 around-6 justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                   </svg>
-                  <h6>Freeship Wordwide</h6>
-                  <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
                 </div>
-                <div class="informacoes-empresa-container">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
-                    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
-                  </svg>
-                  <h6>Special Offers</h6>
-                  <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
-                </div>
-                <div class="informacoes-empresa-container">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
-                  </svg>
-                  <h6>Order Protection</h6>
-                  <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
-                </div>
-                <div class="informacoes-empresa-container">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
-                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
-                  </svg>
-                  <h6>Professional Support</h6>
-                  <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
-                </div>
-            </div>
-        </section>
-        <section>
-          <div class="container-fluid lista-Itens  p-0 m-0">
-            <div class="container-sm informacoes-Desconto">
-              <div class="btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check " name="btnradio" id="btnradio7" autocomplete="off" checked="">
-                <label class="btn " for="btnradio7">Best Seller</label>
-              
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
-                <label class="btn " for="btnradio8">Featured Products</label>
-              
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
-                <label class="btn " for="btnradio9">On Sale</label>
-
+                <h4 class="text-white " style="font-weight: bold;">+12.345.254.89</h4>
               </div>
-            </div>
-            <div class="produtos-container">
-              <div id="listaItensFiltro" class="lista-Itens-Cards row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-6">
-             
-              </div>
-            </div>
-          </div>
-          
-        </section>
-        <section>
-          <div class="d-flex flex-row justify-content-center align-itens-center ">
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./Assets/Images/Marcas/Zara.png" alt="">
-                </div>
-                <div class="carousel-item">
-                  <img src="./Assets/Images/Marcas/Navigator.png" alt="">
-                </div>
-                <div class="carousel-item">
-                  <img src="./Assets/Images/Marcas/HeM.png" alt="">
-                </div>
-                <div class="carousel-item">
-                  <img src="./Assets/Images/Marcas/Willisam.png" alt="">
-                </div>
-                <div class="carousel-item">
-                  <img src="./Assets/Images/Marcas/Arrow.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </section>
-        <section>
-          <div class="container-fluid m-0 p-0 d-flex flex-row justify-content-center align-itens-center fundo-carrosel">
-            <div id="carouselPessoas" class="carousel slide carouselPessoas ">
-              <div class="carousel-inner-pessoas ">
-                <div class="carousel-item carousel-item-pessoas active ">
-                  <div class="carousel-pessoa-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
-                      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+              <img src="./Assets/Images/logo.png" alt="">
+              <div class="icons-nav-2">
+                <div class="icons-sumir-desktop">
+                  <button class=" bg-transparent border-0 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-heart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
                     </svg>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <div class="imagem-Pessoa">
-                      <img src="./Assets/Images/Pessoas/client-1.png" alt="">
-                      <h6>Lela Rodgers - California</h6>
-                    </div>
-                   
-                  </div>
-                </div>
-                <div class="carousel-item carousel-item-pessoas">
-                  <div class="carousel-pessoa-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
-                      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                  </button>
+                  <button class=" bg-transparent border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25"
+                      class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
                     </svg>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <div class="imagem-Pessoa">
-                      <img src="./Assets/Images/Pessoas/client-2.png" alt="">
-                      <h6>Lela Rodgers - California</h6>
-                    </div>
-                   
-                  </div>
+                  </button>
                 </div>
-                
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <svg class="botao-hamburguer" xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25"
+                    fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                  </svg>
+                </button>
+
+              </div>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+          <div class="container-fluid container-nav-3">
+            <div class="container-fluid nav-3-itens">
+              <div class="btn-group drop-nav">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                  </svg>
+                </button>
 
-        <section>
-          <div class="container-fluid m-0 p-0 ">
-            <div id="textoh2" class="titulo-h2 ">
-              <h2>Tech News</h2>
-            </div>
-            <div id="lista-Tech-News" class="container-tech-grid ">
-                <div class="itens-tech p-0 m-0">
-                  <img src="./Assets/Images/Tech/e-blog-1.jpg" alt="">
-                  <div class="informacoes-tech">
-                    <h6>Casual, Artsy</h6>
-                    <h4>Lorem ipsum dolor sit amet</h4>
-                    <h6>By John Doe 19 Dec 2019</h6>
-                    <p>Proin vitae nisl mauris. Nulla dignissim maximus molestie.
-                      Orci varius natoque penatibus et magnis dis parturient montes,
-                       nascetur ridiculus mus.</p>
-                       <button>Read More</button>
-                  </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Computer</a></li>
+                  <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  <li><a class="dropdown-item" href="#">Casual Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Chic Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Artsy Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Preppy Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Sophisticated</a></li>
+                </ul>
+              </div>
+              <div class="links-drops">
+                <div class="dropdown">
+                  <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item " href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
                 </div>
-
-                <div class="itens-tech p-0 m-0">
-                  <img src="./Assets/Images/Tech/e-blog-2.jpg" alt="">
-                  <div class="informacoes-tech">
-                    <h6>Trendy, Casual</h6>
-                    <h4>Consectetur adipiscing elit</h4>
-                    <h6>By John Doe 19 Dec 2019</h6>
-                    <p>Proin vitae nisl mauris. Nulla dignissim maximus molestie.
-                      Orci varius natoque penatibus et magnis dis parturient montes,
-                       nascetur ridiculus mus.</p>
-                       <button>Read More</button>
-                  </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
                 </div>
-            </div>
-             
-          </div>
-        </section>
-
-        <section>
-          <div class="container-fluid m-0 p-0">
-            <div class="container-input-email">
-              <div class="conteudo-input-email">
-                <h3>Sign Up For Newsletter</h3>
-                <div class="input-group">
-                  <input placeholder="Enter your email address" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                  <a class="input-group-text">Subscribe</a>
+                <div class="dropdown">
+                  <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary  type=" button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
                 </div>
               </div>
-              
+
+              <div class="nav-input">
+                <input type="text" class=" " placeholder="Search products..." aria-label="Username"
+                  aria-describedby="basic-addon1">
+                <button class=" bg-transparent border-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+                </button>
+              </div>
+
+              <button class=" bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" wfill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+              </button>
+              <button class=" bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+
             </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container-fluid m-0 p-0">
-            <div class="container-footer">
-                <div class="container text-center">
-                    <div class="row align-items-center container-itens-footer">
-                        
-                        <!-- Logo -->
-                        <div class="col-lg-2 col-md-3 col-sm-12 imagem-logo-footer">
-                            <img src="./Assets/Images/logo.png" alt="">
-                        </div>
-    
-                        <!-- Grid para os itens do footer -->
-                        <div class="col-lg-8 col-md-9 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Quick Links</h5>
-                                    <ul>
-                                        <li>Our Blog</li>
-                                        <li>About US</li>
-                                        <li>Help Center</li>
-                                        <li>Contact Us</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Useful Links</h5>
-                                    <ul>
-                                        <li>Service</li>
-                                        <li>Affiliate</li>
-                                        <li>Terms e Conditions</li>
-                                        <li>Privacy Policy</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Experience App on Mobile</h5>
-                                    <img src="./Assets/Images/Icons-App-Mobile/app-1.png" alt="Android">
-                                    <img src="./Assets/Images/Icons-App-Mobile/app-2.png" alt="Apple">
-                                </div>
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Top Categories</h5>
-                                    <ul>
-                                        <li>Casual</li>
-                                        <li>Sophisticated</li>
-                                        <li>Artsy</li>
-                                        <li>Preppy</li>
-                                        <li>Accessories</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Latest Blogs</h5>
-                                    <ul>
-                                        <li>01. Lorem ipsum dolor sit...</li>
-                                        <li>02. Consectetur adipiscing...</li>
-                                        <li>03. Sed ut perspiciatis...</li>
-                                        <li>04. At vero eos et accusamus...</li>
-                                        <li>05. Dignissimos ducimus...</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-6 Lista-footer">
-                                    <h5>Contact info</h5>
-                                    <ul>
-                                        <li>121 King Street, New York <br> 3000 USA</li>
-                                        <li>Open time: 9:00 - 19:00, Monday - Friday</li>
-                                        <li>Email: Demo@Store.com</li>
-                                        <li>Phone: +12.345.678.43</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Texto final -->
-                    <div class="texto-final-footer">
-                        <p>CAPRICE©2020. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
-    </footer>
-      <script src="./script.js"></script>
-      <script src="./Bootstrap/bootstrap.bundle.js"></script>
-  </body>
-  </html>
+
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="carrosel-item-1">
+              <div class="texto">
+                <h1>Have It Your Way</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae
+                  dicta sunt explicabo.</p>
+                <button type="button" class="botao-carrosel">Shop now</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carrosel-item-2">
+              <div class="texto">
+                <h1>There is no Substitute</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <button type="button" class="btn btn-primary botao-carrosel">Shop now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid lista-Itens  p-0 m-0">
+        <div class="container-fluid d-flex align-itens-center justify-content-center">
+          <h2>Latest Products</h2>
+        </div>
+
+        <div class="container-fluid">
+          <div class="btn-group-ms" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" checked="">
+            <label class="btn " for="btnradio1">All</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn " for="btnradio2">Sophisticated</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn " for="btnradio3">Preppy</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn " for="btnradio4">Artsy</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+            <label class="btn" for="btnradio5">Bohemian</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+            <label class="btn " for="btnradio6">Casual</label>
+          </div>
+        </div>
+        <div class="produtos-container">
+          <div id="listaItens" class="lista-Itens-Cards row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-6">
+
+          </div>
+        </div>
+
+    </section>
+    <section>
+      <div class="container-fluid carrosel-modelos  p-0 m-0">
+        <div class="container-fluid d-flex align-itens-center justify-content-center">
+          <h2>Featured Categories</h2>
+        </div>
+        <div class="container-fluid m-0 p-0 d-flex flex-row justify-content-center align-itens-center fundo-carrosel">
+          <div id="carouselModelos" class="carousel slide carouselModelos ">
+            <div class="carousel-inner-modelos ">
+              <div class="carousel-item carousel-item-modelos active ">
+                <div class="carousel-modelos-item">
+
+
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-modelos">
+                <div class="carousel-modelos-item">
+                  <div class="item-modelo-carrosel">
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid informacoes-empresa row row-cols row-cols-sm-2 row-cols-md-3  row-cols-lg-4">
+
+        <div class="informacoes-empresa-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-truck"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+          </svg>
+          <h6>Freeship Wordwide</h6>
+          <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
+        </div>
+        <div class="informacoes-empresa-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-gift"
+            viewBox="0 0 16 16">
+            <path
+              d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z" />
+          </svg>
+          <h6>Special Offers</h6>
+          <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
+        </div>
+        <div class="informacoes-empresa-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-lock"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
+          </svg>
+          <h6>Order Protection</h6>
+          <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
+        </div>
+        <div class="informacoes-empresa-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-headset"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+          </svg>
+          <h6>Professional Support</h6>
+          <p>In ac hendrerit turpis. Aliquam ultrices dolor dolor, at commodo diam feugiat</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid lista-Itens  p-0 m-0">
+        <div class="container-sm informacoes-Desconto">
+          <div class="btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check " name="btnradio" id="btnradio7" autocomplete="off" checked="">
+            <label class="btn " for="btnradio7">Best Seller</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+            <label class="btn " for="btnradio8">Featured Products</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+            <label class="btn " for="btnradio9">On Sale</label>
+
+          </div>
+        </div>
+        <div class="produtos-container">
+          <div id="listaItensFiltro" class="lista-Itens-Cards row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-6">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="d-flex flex-row justify-content-center align-itens-center ">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Assets/Images/Marcas/Zara.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/Marcas/Navigator.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/Marcas/HeM.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/Marcas/Willisam.png" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/Images/Marcas/Arrow.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="container-fluid m-0 p-0 d-flex flex-row justify-content-center align-itens-center fundo-carrosel">
+        <div id="carouselPessoas" class="carousel slide carouselPessoas ">
+          <div class="carousel-inner-pessoas ">
+            <div class="carousel-item carousel-item-pessoas active ">
+              <div class="carousel-pessoa-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.
+                </p>
+                <div class="imagem-Pessoa">
+                  <img src="./Assets/Images/Pessoas/client-1.png" alt="">
+                  <h6>Lela Rodgers - California</h6>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-pessoas">
+              <div class="carousel-pessoa-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.
+                </p>
+                <div class="imagem-Pessoa">
+                  <img src="./Assets/Images/Pessoas/client-2.png" alt="">
+                  <h6>Lela Rodgers - California</h6>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid m-0 p-0 d-flex flex-column align-items-center justify-content-center ">
+        <div id="textoh2" class="titulo-h2 ">
+          <h2>Tech News</h2>
+        </div>
+        <div id="lista-Tech-News" class="container-tech-grid ">
+          <div class="itens-tech p-0 m-0">
+            <img src="./Assets/Images/Tech/e-blog-1.jpg" alt="">
+            <div class="informacoes-tech">
+              <h6>Casual, Artsy</h6>
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <h6>By John Doe 19 Dec 2019</h6>
+              <p>Proin vitae nisl mauris. Nulla dignissim maximus molestie.
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+
+          <div class="itens-tech p-0 m-0">
+            <img src="./Assets/Images/Tech/e-blog-2.jpg" alt="">
+            <div class="informacoes-tech">
+              <h6>Trendy, Casual</h6>
+              <h4>Consectetur adipiscing elit</h4>
+              <h6>By John Doe 19 Dec 2019</h6>
+              <p>Proin vitae nisl mauris. Nulla dignissim maximus molestie.
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid m-0 p-0">
+        <div class="container-input-email">
+          <div class="conteudo-input-email">
+            <h3>Sign Up For Newsletter</h3>
+            <div class="input-group">
+              <input placeholder="Enter your email address" type="text" class="form-control"
+                aria-label="Dollar amount (with dot and two decimal places)">
+              <a class="input-group-text">Subscribe</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid m-0 p-0">
+      <div class="container-footer">
+        <div class="container text-center">
+          <div class="row align-items-center container-itens-footer">
+
+
+            <div class="col-lg-2 col-md-3 col-sm-12 imagem-logo-footer">
+              <img src="./Assets/Images/logo.png" alt="">
+            </div>
+
+
+            <div class="col-lg-8 col-md-9 col-sm-12">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Quick Links</h5>
+                  <ul>
+                    <li>Our Blog</li>
+                    <li>About US</li>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Useful Links</h5>
+                  <ul>
+                    <li>Service</li>
+                    <li>Affiliate</li>
+                    <li>Terms e Conditions</li>
+                    <li>Privacy Policy</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Experience App on Mobile</h5>
+                  <img src="./Assets/Images/Icons-App-Mobile/app-1.png" alt="Android">
+                  <img src="./Assets/Images/Icons-App-Mobile/app-2.png" alt="Apple">
+                </div>
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Top Categories</h5>
+                  <ul>
+                    <li>Casual</li>
+                    <li>Sophisticated</li>
+                    <li>Artsy</li>
+                    <li>Preppy</li>
+                    <li>Accessories</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Latest Blogs</h5>
+                  <ul>
+                    <li>01. Lorem ipsum dolor sit...</li>
+                    <li>02. Consectetur adipiscing...</li>
+                    <li>03. Sed ut perspiciatis...</li>
+                    <li>04. At vero eos et accusamus...</li>
+                    <li>05. Dignissimos ducimus...</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 Lista-footer">
+                  <h5>Contact info</h5>
+                  <ul>
+                    <li>121 King Street, New York <br> 3000 USA</li>
+                    <li>Open time: 9:00 - 19:00, Monday - Friday</li>
+                    <li>Email: Demo@Store.com</li>
+                    <li>Phone: +12.345.678.43</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="texto-final-footer">
+            <p>CAPRICE©2020. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="./Bootstrap/bootstrap.bundle.js"></script>
+</body>
+
+</html>

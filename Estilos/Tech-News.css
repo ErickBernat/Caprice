@@ -1,8 +1,11 @@
 
 
 .container-tech-grid{
+    width: 85vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 50px !important;
 }
 
@@ -11,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 85vw;
     height: auto;
     padding: 30px!important;
     gap: 20px;
@@ -33,7 +36,6 @@
     text-align: center !important;
     
     h2{
-        width: 50vw;
         font-family: textoTitulo;
         border-bottom: 2px #810000 solid;
         font-size: clamp(1rem,8vw,3rem);
@@ -64,26 +66,34 @@
 
 
 @media screen and (min-width:990px) {
+
+    .container-tech-grid{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px !important;
+}
     .itens-tech{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 85vw;
         height: auto;
         padding: 30px!important;
-        gap: 20px;
+        gap: 2vw;
     
         img{
-            max-width: 500px;
-            width:100% !important;
+            width:clamp(2rem,20vw,100rem) !important;
             height: auto;
         }
         h6{
-            font-size: 25px;
+            font-size: clamp(1rem,1vw,3rem)!important;
         }
         p{
-            font-size: 20px;
+            font-size: clamp(1rem,1vw,3rem)!important;
         }
     }
 

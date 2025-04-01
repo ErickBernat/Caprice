@@ -1,7 +1,8 @@
 .container-input-email{
-    margin-top: 10%!important;
     text-align: center;
     background-color: #810000 ;
+    height: auto;
+    padding: 60px;
     max-height: 800px;
     color: white;
     
@@ -13,10 +14,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 40px!important;
    
     h3{
-        margin-top: 10%!important;
         font-family: fontTitulo;
         font-size: 1.5rem;
         border: none;
@@ -58,7 +57,7 @@
         h3{
             margin-top: 4%!important;
             font-family: fontTitulo;
-            font-size: 3rem;
+            font-size: clamp(1rem,3vw,3rem);
             border: none;
         }
         .input-group{
@@ -69,18 +68,18 @@
            
     
             input{
-                font-size: 1.3rem;
-                padding: 10px;
-                border-radius: 30px;
+                font-size: clamp(1rem,1.2vw,3rem);
+                padding:1.3vw;
+                border-radius: 10vw;
             }
     
     
             a{
-                font-size: 1.3rem;
+                font-size: clamp(1rem,1.2vw,2rem);
                 text-decoration: none;
                 font-family: fontBold;
                 background-color: #810000;
-                border-radius: 30px;
+                border-radius: 30vw ;
                 color: white;
             }
         }
