@@ -1,6 +1,6 @@
 .informacoes-empresa{
     display: flex;
-    margin-top: 20%!important;
+    margin-top: 5%!important;
     height: auto;
     background-color: #810000;
     align-items: center;
@@ -57,7 +57,7 @@
         }
         p{
             font-size: clamp(1rem,1vw,3rem);
-            width: 16vw;
+            width: 20vw;
         }
     }
 }

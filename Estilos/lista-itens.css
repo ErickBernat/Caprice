@@ -91,7 +91,7 @@ h2{
     h2{
         font-family: textoTitulo;
         border-bottom: 2px #810000 solid;
-        font-size:clamp(1rem,3vw,4rem) !important;
+        font-size:clamp(1rem,2.5vw,4rem) !important;
     }
 
 
@@ -107,8 +107,8 @@ h2{
         
     
         .btn{
-            font-size:clamp(0.7rem,0.9vw,3rem)!important ; ;
-            width:clamp(1rem,8vw,9rem)!important ;
+            font-size:clamp(0.7rem,0.8vw,3rem)!important ; ;
+            width:clamp(1rem,10vw,10rem)!important ;
             height: auto;
             padding: 8px!important;
             text-align: center;

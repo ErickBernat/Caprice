@@ -1,11 +1,43 @@
-let listaItens = document.getElementById("listaItens");
-let listaItensFiltro = document.getElementById("listaItensFiltro");
+const listaItens = document.getElementById("listaItens");
+const listaItensFiltro = document.getElementById("listaItensFiltro");
+const listaModelos = document.getElementById("Carrosel-modelos");
 let arrayItens = []
+let arrayModelos = []
+const dropUsd = document.getElementById("dropUsd");
+const menuUsd = document.getElementById("menuUsd");
+const dropEnglish = document.getElementById("d");
+const menuEnglish = document.getElementById("m");
+
+dropUsd.addEventListener(ativaDropDown(dropUsd,menuUsd));
+dropEnglish.addEventListener(ativaDropDown(dropEnglish,menuEnglish))
+
+
+
+function ativaDropDown(botao,drop){
+            botao.addEventListener("mouseenter", function () {
+                drop.classList.add("show");
+                botao.style.backgroundColor = "transparent";
+                drop.style.animation = "slideScale 0.5s ease-out"
+                botao.style.color = "#393939"
+                botao.style.transition = '2s'
+            });
+    
+            botao.addEventListener("mouseleave", function () {
+                drop.style.animation = "slideScaleOut 0.5s ease-out";
+                setTimeout(() => {
+                    drop.classList.remove("show");;
+                  }, "300");
+            
+            });
+}
+
+
+
 
 
 function carregaListaItens(){
 
-    fetch('./Model/itens.json')
+    fetch('./Data/itens.json')
         .then(response => response.json())
         .then(data => {
             let arrayItens = data.itens;
@@ -39,19 +71,36 @@ function carregaListaItens(){
         })
 }
 
-function carregaListaItensDesconto(){
 
-    fetch('./Model/itens.json')
-        .then(response => response.json())
-        .then(data => {
-            let arrayItens = data.itens;
+        
 
-            arrayItens.forEach(item => {
-                
-            });
+function carregaListaModelos(){
 
+    fetch('./Data/modelos.json').then(response => response.json()).then(data => {
+        let arrayModelos = data.modelos;
+
+        arrayModelos.forEach(item =>{
+            listaModelos.innerHTML +=`
+            <div class="carousel-item-Modelos">
+                <div class="carousel-item-informacoes">
+                  <h5>${item.titulo}</h5>
+                  <h6>35 products from $35.00</h6>
+                  <a href=""> > ${item.links[0]}</a>
+                  <a href=""> > ${item.links[1]}</a>
+                  <a href=""> > ${item.links[2]}</a>
+                  <a href=""> > ${item.links[3]}</a>
+                  <button>Shop now</button>
+                </div>
+                <div class=imagem-Modelos>
+                  <img src="${item.Url}" alt="">
+                </div>  
+            </div>
+            
+            `
         })
+    })
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#carouselExample");
@@ -62,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     carousel.addEventListener("touchstart", (e) => {
         startX = e.touches[0].clientX;
     });
+    carousel.addEventListener("")
 
     carousel.addEventListener("touchmove", (e) => {
         endX = e.touches[0].clientX;
@@ -77,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#carouselPessoas");

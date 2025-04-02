@@ -1,0 +1,10 @@
+{
+    "modelos":[
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-1.jpg"},
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-4.jpg"},
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-2.jpg"},
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-5.jpg"},
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-3.jpg"},
+        {"titulo":"Camera & Photo","links":["Vintage","Bohemian","Chic Fashion","Sophisticated"],"Url":"./Assets/Images/Modelos/categories-6.jpg"}
+    ]
+}

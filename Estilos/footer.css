@@ -22,6 +22,8 @@ ul{
 
 .container-itens-footer{
    display: flex;
+   align-items: center;
+   justify-content: center;
    gap: 8vw!important;
 }
 
@@ -54,4 +56,21 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 3vw;
+}
+
+@media screen and (min-width:990px) {
+        .container-footer{
+            display: none;
+        }
+
+    .texto-final-footer{
+        border-top: 1px solid gray;
+        margin-top: 20px!important;
+        width: 80vw!important;
+        padding: 2vw;
+        text-align: center;
+       
+    }
+
+    
 }
