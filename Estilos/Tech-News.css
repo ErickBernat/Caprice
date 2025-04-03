@@ -19,11 +19,22 @@
     padding: 30px!important;
     gap: 20px;
 
-    img{
+    .imagem-Modelos{
         max-width: 500px;
+        overflow: hidden;
         width:100% !important;
         height: auto;
+        img{
+            width:100% !important;
+            height: auto;
+        }
+        img:hover{
+            transition: 0.5s;
+            transform: scale(110%);
+        }
     }
+
+   
 }
 
 .titulo-h2{
@@ -31,9 +42,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10%!important;
     font-family: fontTitulo;
     text-align: center !important;
+    margin-top: 5%!important;
     
     h2{
         font-family: textoTitulo;
@@ -62,18 +73,22 @@
         width: 100px;
         padding: 6px;
     }
+    button:hover{
+        background-color: black;
+        color: white;
+    }
 }
 
 
-@media screen and (min-width:990px) {
+@media screen and (min-width:1162px) {
 
     .container-tech-grid{
-    width: 85vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px !important;
+    gap: 10px !important;
 }
     .itens-tech{
         display: flex;
@@ -83,16 +98,13 @@
         width: 85vw;
         height: auto;
         padding: 30px!important;
-        gap: 2vw;
     
-        img{
-            width:clamp(2rem,20vw,100rem) !important;
-            height: auto;
-        }
+       
         h6{
             font-size: clamp(1rem,1vw,3rem)!important;
         }
         p{
+            width: 300px;
             font-size: clamp(1rem,1vw,3rem)!important;
         }
     }
@@ -124,6 +136,9 @@
 .container-tech-grid{
     display: flex;
     flex-direction: row!important;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 0px;
     gap: 50px !important;
 }
 }

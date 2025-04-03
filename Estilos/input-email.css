@@ -68,14 +68,14 @@
            
     
             input{
-                font-size: clamp(1rem,1.2vw,3rem);
-                padding:1.3vw;
+                font-size: clamp(1rem,1rem,3rem);
+                padding:1.8%;
                 border-radius: 10vw;
             }
     
     
             a{
-                font-size: clamp(1rem,1.2vw,2rem);
+                font-size: clamp(1rem,1rem,2rem);
                 text-decoration: none;
                 font-family: fontBold;
                 background-color: #810000;

@@ -1,6 +1,28 @@
 
 .produtos-container{
     width: 90vw;
+
+    .card{
+        cursor: pointer;
+
+        .subMenuCard{
+            position:absolute;
+            background-color: #810000;
+            display: none;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            gap: 10px;
+            padding: 5px;
+
+
+            svg{
+                width: 16px;
+                height: auto;
+                fill: white;
+            }
+        }
+    }
 }
 h2{
     font-family: textoTitulo;
@@ -75,11 +97,36 @@ h2{
 @media screen and (min-width:990px) {
     .produtos-container{
         width: 85vw !important;
+        
+
+        .card{
+            cursor: pointer;
+
+            .subMenuCard{
+                position:absolute;
+                background-color: #810000;
+                display: none;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                gap: 10px;
+                padding: 5px;
+
+
+                svg{
+                    width: 16px;
+                    height: auto;
+                    fill: white;
+                }
+            }
+        }
     }
+    
 
     .texto-card{
         font-family: textoTitulo!important;
         padding: 1vh 0vh;
+      
         h6{
             font-size: 0.9rem!important;
             width: 11vw;
@@ -105,10 +152,14 @@ h2{
         font-family: fontTexto;
         font-weight: bold;
         
-    
+        .btn-check:checked + .btn {
+            background-color: #810000 !important;
+            color: white !important;
+            border-color: #810000 !important;
+        }
         .btn{
             font-size:clamp(0.7rem,0.8vw,3rem)!important ; ;
-            width:clamp(1rem,10vw,10rem)!important ;
+            width:auto;
             height: auto;
             padding: 8px!important;
             text-align: center;
@@ -117,15 +168,16 @@ h2{
             border:1px solid #d2d2d2  !important;
             color: black;
         }
-        .btn-check:checked + .btn {
-            background-color: #810000 !important;
-            color: white !important;
-            border-color: #810000 !important;
+        
+
+        .active{
+            background-color: #810000;
+            color: white;
         }
 
         .btn:hover{
-            background-color: #810000 !important;
-            color: white;
+            border-color: #810000 !important;
+            color: #810000;
         }
 
 

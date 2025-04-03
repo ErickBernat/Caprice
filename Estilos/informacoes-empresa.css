@@ -26,6 +26,22 @@
     p{
         max-width: 300px;
     }
+
+    svg:hover{
+        animation: rotacionaSvg 0.8s ease forwards;
+    }
+}
+
+
+@keyframes rotacionaSvg {
+    from{
+        transform: scale(0);
+        transform: rotatey(0);
+    }
+    to{
+        transform: scale(1);
+        transform: rotatey(180deg);
+    }
 }
 
 @media screen and (min-width:990px) {

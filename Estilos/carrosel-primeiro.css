@@ -8,41 +8,13 @@
     height: 80vh; 
 }
 
-.carousel-item {
-    transition: transform 0.6s ease-in-out;
-    backface-visibility: hidden;
-    perspective: 1000px;
-    height: 80vh; 
-}
-
-
-.carrosel-item-1, 
-.carrosel-item-2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-#carouselExampleFade {
-    min-height: 65vh;
-    background-color: #f8f9fa; 
-}
-
-
-.carousel-item.active {
-    display: block !important;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%);
     width: 30px; 
     height: 30px;
 }
+
 
 
 
@@ -58,8 +30,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
 }
 
 .carrosel-item-1{
@@ -77,21 +47,36 @@
     height: auto;
     gap: 3vh;
 
+    
+
+
     h1{
+        position: relative;
+        height: 100px;
         font-size: clamp(1rem,10vw,3rem);
         font-weight: bold;
+        animation: letrasAnimacao 2.5s ease;   
+        transform-origin: bottom;
     }
 
     p{
+        position: relative;
+        animation: letrasAnimacao 3s ease;   
+        transform-origin: bottom;
         font-family: fontTexto;
         width: 70vw;
-        font-weight: bold;
-        line-height: 4vh;
+        font-weight: 600;
+        line-height: 3vh;
     }
 
 }
 
+
+
 .botao-carrosel{
+    position: relative;
+    animation: letrasAnimacao 3.5s ease;   
+    transform-origin: bottom;
     font-family: fontBold;
     font-size: clamp(1rem,1vw,6rem);;
     border-radius: 100px !important;
@@ -103,38 +88,89 @@
 }
 
 .botao-carrosel:hover{
-    background-color: #810000;
+    transform-origin: center;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+
+
+@keyframes letrasAnimacao {
+
+    0%{
+        opacity: 0;
+        top: 90px;
+    
+    }
+
+    70%{
+        opacity: 0;
+        top: 90px;
+    }
+
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+    
 }
 
 @media screen and (min-width:990px) {
 
 
     .texto{
+        margin-left: 5%!important;
         font-family: textoTitulo;
         display: flex;
         flex-direction: column;
         width: 80vw;
         height: auto;
-        gap: 7vh;
+        gap: 5vh;
     
         h1{
-            font-size: clamp(2rem,3.5rem,5rem);
+            font-size: clamp(2rem,5rem,5rem);
             font-weight: bold;
         }
 
         
     
         p{
-            font-family: fontTexto;
-            width: 35vw;
-            font-size: clamp(0.9rem,1vw,2rem);
-            line-height: 2rem!important;
-            font-weight: bold;
-            line-height: 5vh;
+            width: 32vw;
+            font-size: clamp(0.9rem,1.1rem,2rem);
+
         }
     
     }
+    
 
+ 
+    
+    .carousel-inner {
+        width: 100%;
+        height: 95vh; 
+    }
+    
+    .carousel-item {
+        height: 95vh; 
+    }
+
+
+    .carrosel-item-1,.carrosel-item-2{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 95vh;
+      
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
   
     
 
