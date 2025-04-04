@@ -3,58 +3,69 @@
     {
             "imagem": "./Assets/Images/Itens/Mochila.jpg",
             "nome": "Navy Blue Plain Jegging",
-            "valor": 59.00
+            "valor": 59.00,
+            "id": 1
     },
     {
         "imagem": "./Assets/Images/Itens/Smart-Watch.jpg",
         "nome": "Brown Printed Dress",
-        "valor": 20.99
+        "valor": 20.99,
+        "id": 2
     },
     {
         "imagem": "./Assets/Images/Itens/Moletom-Rosa.jpg",
         "nome": "White Check Top",
-        "valor": 179.90
+        "valor": 179.90,
+        "id": 3
     },
     {
         "imagem": "./Assets/Images/Itens/Bone.jpg",
         "nome": "Navy Plain F Neck Tunic",
-        "valor": 50.99
-    },
+        "valor": 50.99,
+        "id": 4
+      },
     {
         "imagem": "./Assets/Images/Itens/Camiseta-Preta.jpg",
         "nome": "Grey Print Jegging",
-        "valor": 60.00
+        "valor": 60.00,
+        "id": 5
       },
       {
         "imagem": "./Assets/Images/Itens/Bota.jpg",
         "nome": "Black Plain F Neck Tunic",
-        "valor": 66.99
+        "valor": 66.99,
+        "id": 6
       },
       {
         "imagem": "./Assets/Images/Itens/Moletom-Marrom.jpg",
         "nome": "Grey Stripe Plazzo",
-        "valor": 90.99
+        "valor": 90.99,
+        "id": 7
       },
     {
       "imagem": "./Assets/Images/Itens/Bolsa.jpg",
       "nome": "Black Printed Hooded Jacket",
-      "valor": 60.00
+      "valor": 60.00,
+      "id": 8
     },
     {
         "imagem": "./Assets/Images/Itens/Mascara.jpg",
         "nome": "Round Neck Cardigan",
-        "valor": 70.00
+        "valor": 70.00,
+        "id": 9
       },
       {
         "imagem": "./Assets/Images/Itens/Gravata.jpg",
         "nome": "Plain Hooded Sweatshirt",
-        "valor": 60.00
+        "valor": 60.00,
+        "id": 10
       },
     
     {
       "imagem": "./Assets/Images/Itens/Cinto.jpg",
       "nome": "Milange Plain Lower",
-      "valor": 60.00
+      "valor": 60.00,
+      "id": 11
     },
     
     

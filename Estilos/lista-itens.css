@@ -94,14 +94,77 @@ h2{
     background-color: #810000;
 }
 
-@media screen and (min-width:990px) {
+.produtos-container{
+    width: 85vw !important;
+    
+
+    .card{
+        cursor: pointer;
+
+        .subMenuCard{
+            position:absolute;
+            background-color: #810000;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            gap: 10px;
+            padding: 2%;
+            left: 85%;
+            transform-origin: top !important;
+
+            svg{
+                width: 20px;
+                height: auto;
+                fill: white;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:580px) {
+
+
     .produtos-container{
         width: 85vw !important;
         
-
+    
         .card{
             cursor: pointer;
+    
+            .subMenuCard{
+                position:absolute;
+                background-color: #810000;
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                gap: 13px;
+                padding: 8px;
+                left: 80%;
+                max-width: 50px;
+    
+    
+                svg{
+                    width:20px;
+                    height: auto;
+                    fill: white;
+                }
+            }
+        }
+    }
 
+}
+
+@media screen and (min-width:767px) {
+    .produtos-container{
+        width: 85vw !important;
+        
+    
+        .card{
+            cursor: pointer;
+    
             .subMenuCard{
                 position:absolute;
                 background-color: #810000;
@@ -109,19 +172,83 @@ h2{
                 flex-direction: column;
                 width: auto;
                 height: auto;
-                gap: 10px;
+                gap: 13px;
                 padding: 5px;
-
-
+                left: 75%;
+                max-width: 50px;
+    
+    
                 svg{
-                    width: 16px;
+                    width:18px;
                     height: auto;
                     fill: white;
                 }
             }
         }
     }
+
+}
+
+@media screen and (min-width:990px) {
     
+    .produtos-container{
+        width: 85vw !important;
+        
+    
+        .card{
+            cursor: pointer;
+    
+            .subMenuCard{
+                position:absolute;
+                background-color: #810000;
+                display: none;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                gap: 13px;
+                padding: 5px;
+                left: 75%;
+                max-width: 50px;
+           
+               
+    
+                svg{
+                    width:18px;
+                    height: auto;
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    @keyframes slideScale {
+        0% {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+        50%{
+             opacity: 1;
+            transform: scaleY(1);
+        }
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+    @keyframes slideScaleOut {
+        0% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+        80%{
+            opacity: 1;
+            transform: scaleY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+    }
 
     .texto-card{
         font-family: textoTitulo!important;
