@@ -2,6 +2,7 @@
 .informacoes-Desconto{
     height: auto;
     margin-top: 5% !important;
+    
 
     .btn-group-sm{
         display:flex;
@@ -16,11 +17,11 @@
         .btn{
             border-radius: 0 !important;
             border:none !important;
-            color: black;
-            font-size: clamp(0.5rem,1.2rem,5rem);
+            color: rgba(0, 0, 0, 0.178);
+            font-size: clamp(0.5rem,1.4rem,5rem);
         }
         .btn-check:checked + .btn {
-           
+           color: black;
             border-bottom: 2px solid #810000 !important;
         }
     }
@@ -29,6 +30,66 @@
 }
 
 @media screen and (min-width:990px) {
+
+    .produtos-container{
+        width: 85vw !important;
+        
+    
+        .card{
+            cursor: pointer;
+    
+            .subMenuCard{
+                position:absolute;
+                background-color: #810000;
+                display: none;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                gap: 13px;
+                padding: 5px;
+                left: 75%;
+                max-width: 50px;
+           
+               
+    
+                svg{
+                    width:18px;
+                    height: auto;
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    @keyframes slideScale {
+        0% {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+        50%{
+             opacity: 1;
+            transform: scaleY(1);
+        }
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+    @keyframes slideScaleOut {
+        0% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+        80%{
+            opacity: 1;
+            transform: scaleY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+    }
+
     
 .informacoes-Desconto{
     height: auto;
