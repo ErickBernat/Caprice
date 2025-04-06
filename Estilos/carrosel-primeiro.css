@@ -3,9 +3,12 @@
     width: 100%;
 }
 
-.carousel-inner {
-    width: 100%;
-    height: 80vh; 
+
+.carrosel-primeiro{
+    .carousel-inner {
+        width: 100%;
+        height: 80vh; 
+    }
 }
 
 .carousel-control-prev-icon,
@@ -146,9 +149,11 @@
 
  
     
-    .carousel-inner {
-        width: 100%;
-        height: 95vh; 
+    .carrosel-primeiro{
+        .carousel-inner {
+            width: 100%;
+            height: 95vh; 
+        }
     }
     
     .carousel-item {
