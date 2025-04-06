@@ -1,0 +1,24 @@
+{
+    "membros":[
+    {
+            "imagem": "../Assets/Images/TechMembers/gerente.png",
+            "nome": "Mr. Mike Banding",
+            "cargo":"Manager"
+    },
+    {
+        "imagem": "../Assets/Images/TechMembers/developer.png",
+        "nome": "Mr. Peter Pan",
+        "cargo":"Developer"
+    },
+    {
+        "imagem": "../Assets/Images/TechMembers/design.png",
+        "nome": "Ms. Sophia",
+        "cargo":"Designer"
+    },
+    {
+        "imagem": "../Assets/Images/TechMembers/chairmen.png",
+        "nome": "Mr. John Lee",
+        "cargo":"Chairmen"
+    }
+  ]
+}

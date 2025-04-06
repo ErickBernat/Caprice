@@ -250,17 +250,7 @@ h2{
         }
     }
 
-    .texto-card{
-        font-family: textoTitulo!important;
-        padding: 1vh 0vh;
-      
-        h6{
-            font-size: 0.9rem!important;
-            width: 11vw;
-            margin: 0;
-        }
-        
-    }
+    
 
     h2{
         font-family: textoTitulo;

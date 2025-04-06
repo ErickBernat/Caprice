@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="../Estilos/AboutUs/style.css">
 </head>
-<body>
+<body onload="carregaListaMembros()">
     <header>
         <div class="header-container container-fluid m-1">
     
@@ -19,23 +19,23 @@
               <div class="container-fluid redes-container">
                 <div class="redes ">
                   <div class="icons-redes">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                       class="bi bi-facebook" viewBox="0 0 16 16">
                       <path
                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                     </svg>
     
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                       class="bi bi-twitter-x" viewBox="0 0 16 16">
                       <path
                         d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                       class="bi bi-youtube" viewBox="0 0 16 16">
                       <path
                         d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                       class="bi bi-dribbble" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
                         d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" />
@@ -300,7 +300,7 @@
                     </div>
                     <div class="dropdown">
                       <button class="btn btn-secondary " type="button" aria-expanded="false">
-                       <a href="">Contact</a>
+                       <a href="./contatos.html">Contact</a>
                       </button>
                     </div>
                   </div>
@@ -464,9 +464,158 @@
         <section>
             <div class="container-fluid m-0 p-0">
                 <div class="containerOurSkills">
-                  <div class="tituloOurSkills"></div>
+                  <div class="containerItensOurSkills">
+                    <div class="graficoOurSkills">
+                      <div class="tituloOurSkills">
+                        <h4>Our Skills</h4>
+                      </div>
+                      <div class="itemGrafico">
+                        <div class="progressoSkill">
+                          <p>Fashion Design</p>
+                          <p>95%</p>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar " style="width: 95%"></div>
+                        </div>
+                      </div>
+                      <div class="itemGrafico">
+                        <div class="progressoSkill">
+                          <p>Web Design</p>
+                          <p>85%</p>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar " style="width: 85%"></div>
+                        </div>
+                      </div>
+                      <div class="itemGrafico">
+                        <div class="progressoSkill">
+                          <p>Branding Design </p>
+                          <p>80%</p>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar " style="width: 80%"></div>
+                        </div>
+                      </div>
+                      <div class="itemGrafico">
+                        <div class="progressoSkill">
+                          <p>WordPress Development</p>
+                          <p>99%</p>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar " style="width: 99%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="videoOurSkills">
+                      <video autoplay loop muted src="../Assets/Videos/4962909-uhd_4096_2160_25fps.mp4"></video>
+                    </div>
+                  </div>
+                  </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+          <div class="container-fluid m-0 p-0 d-flex flex-row justify-content-center align-itens-center fundo-carrosel">
+            <div id="carouselPessoas" class="carousel slide carouselPessoas ">
+              <div class="carousel-inner-pessoas ">
+                <div class="carousel-item carousel-item-pessoas active ">
+                  <div class="carousel-pessoa-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
+                    <div class="imagem-Pessoa">
+                      <img src="../Assets/Images/Pessoas/client-1.png" alt="">
+                      <h6>Lela Rodgers - California</h6>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item-pessoas">
+                  <div class="carousel-pessoa-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
+                    <div class="imagem-Pessoa">
+                      <img src="../Assets/Images/Pessoas/client-2.png" alt="">
+                      <h6>Lela Rodgers - California</h6>
+                    </div>
+    
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-fluid m-0 p-0">
+          
+            <div class="containerTeamMembers">
+            <div class="tituloTeamMembers">
+              <h2>Team Members</h2>
+            </div>
+              <div class="teamMenbersItens">
+                <div id="listaMembros" class="lista-Membros-Cards row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="d-flex flex-row justify-content-center align-itens-center ">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../Assets/Images/Marcas/Zara.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Assets/Images/Marcas/Navigator.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Assets/Images/Marcas/HeM.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Assets/Images/Marcas/Willisam.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Assets/Images/Marcas/Arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </section>
+
+        <section>
+          <div class="container-fluid m-0 p-0">
+            <div class="container-input-email">
+              <div class="conteudo-input-email">
+                <h3>Sign Up For Newsletter</h3>
+                <div class="input-group">
+                  <input placeholder="Enter your email address" type="text" class="form-control"
+                    aria-label="Dollar amount (with dot and two decimal places)">
+                  <a class="input-group-text">Subscribe</a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
         </section>
       </main>
       <footer>

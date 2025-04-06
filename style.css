@@ -45,6 +45,7 @@
     padding: 0;
 
     img{
+        width: 8rem;
         height: auto;
     }
 }
@@ -294,13 +295,13 @@
     width: 100%!important;
     text-align: start!important;
     border-radius: 0 !important;
-    height: 6vh;
+    height: 3rem;
     font-family: fontTitulo;
     button{
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 25px;
+        font-size: 1rem;
         justify-content: space-between;
         border-radius: 0 !important;
         background-color: #810000 !important;
@@ -668,7 +669,7 @@
         width: 30vw!important;
         text-align: start!important;
         border-radius: 0 !important;
-        height: 6vh;
+        height: 3.5rem;
         max-height: 10vh;
         font-family: fontTitulo;
         button{
