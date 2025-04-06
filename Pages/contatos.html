@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-icons.svg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../Estilos/Contato/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container-fluid m-1">
+    
+          <div class=" header-container-itens  ">
+    
+            <div class="navbar navbar-container d-flex flex-column ">
+              <div class="container-fluid redes-container">
+                <div class="redes ">
+                  <div class="icons-redes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                      class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                      class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                      class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="auto" fill="currentColor"
+                      class="bi bi-dribbble" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" />
+                    </svg>
+                  </div>
+                  <div class="texto-redes">
+                    <h4 class="fs-5 ">
+                      Free delivery - <span>On all orders over $50</span>
+                    </h4>
+                  </div>
+                  <div>
+                    <div class="dropdowns-redes">
+                      <div class="btn-group">
+                        <button  class="btn btn-secondary btn-sm"  id="dropUsd" type="button"
+                          aria-expanded="false">
+                          USD
+                        </button>
+                        <ul id="menuUsd" class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">USD</a></li>
+                          <li><a class="dropdown-item" href="#">EUR</a></li>
+                          <li><a class="dropdown-item" href="#">GBP</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm " id="d" type="button" 
+                          aria-expanded="false">
+                          ENGLISH
+                        </button>
+                        <ul id="m" class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                          <li><a class="dropdown-item" href="#">FRANCE</a></li>
+                          <li><a class="dropdown-item" href="#">GERMANY</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid container-nav-2">
+                <div class="container-nav-2-itens">
+                  <div class="container-telefone">
+                    <div class="telefone-itens  d-flex p-3 border-0 around-6 justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                      </svg>
+                    </div>
+                    <h4 class="text-white " style="font-weight: bold;">+12.345.254.89</h4>
+                  </div>
+                  <img src="../Assets/Images/logo.png" alt="">
+                  <div class="icons-nav-2">
+                    <div class="icons-sumir-desktop">
+                      <button class=" bg-transparent border-0 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-heart"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                      </button>
+                      <button class=" bg-transparent border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25"
+                          class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
+                        </svg>
+                      </button>
+                    </div>
+    
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <svg class="botao-hamburguer" xmlns="http://www.w3.org/2000/svg" fill="white" width="25" height="25"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                      </svg>
+                    </button>
+    
+                  </div>
+    
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button"  data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-x-lg" viewBox="0 0 16 16">
+                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg>
+    
+                      </button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Help Center</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">New Look</a>
+                        </li>
+                      </ul>
+                      <div class="itens-container-offcanvas">
+                        <p class="textoP">Pellentesque mollis nec orci id tincidunt. 
+                          Sed mollis risus eu nisi aliquet, sit amet fermentum.</p>
+                            <div class="itens-offcanvas">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z"/>
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1"/>
+                              </svg>
+                              <p>Monday - Friday: 9:00 - 19:00</p>
+                            </div>
+                            <div class="itens-offcanvas">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                              </svg>
+                              <p>info@example.com</p>
+                            </div>
+                            <div class="itens-offcanvas">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                              </svg>
+                              <p>(+55) 123.456.254</p>
+                            </div>
+                            <div class="itens-offcanvas">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                              </svg>
+                              <p>121 King Street, New York 3000 USA</p>
+                            </div>
+                            <div class="icons-OffCanvas">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16">
+                                <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391s.497.426.641.747c.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922s.461.957.461 1.563c0 .496-.105.922-.285 1.278a2.3 2.3 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.3 5.3 0 0 1-1.278.176L0 12.803V3zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a1 1 0 0 0-.32-.355 1.8 1.8 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305zm6.858-.035q.428.427 1.278.426c.39 0 .746-.106 1.032-.286q.426-.32.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.1 4.1 0 0 1-1.527-.285 2.8 2.8 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4 4 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396m2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176s-.356.25-.496.39a.96.96 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978z"/>
+                              </svg>
+                            </div>
+                            <p>@ 2020 Caprice. All rights reserved</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid container-nav-3">
+                <div class="container-fluid nav-3-itens">
+                  <div class="btn-group drop-nav">
+                    <button class="btn btn-secondary" id="dropNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                      </svg>
+                    </button>
+    
+                    <ul class="dropdown-menu" id="menuNav">
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Sophisticated</a></li>
+                      <li><a class="dropdown-item" href="#">Artsy Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">Chic Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">Casual Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">Trendy Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">Preppy Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">Sophisticated</a></li>
+                    </ul>
+                  </div>
+                  <div class="links-drops">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="">Home</a>
+                      </button>
+                      <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item " href="#">Home 02</a></li>
+                        
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <a href="">Pages</a>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About US</a></li>
+                        <li><a class="dropdown-item" href="#">Faq</a></li>
+                        <li><a class="dropdown-item" href="#">404 page</a></li>
+                        <li><a class="dropdown-item" href="#">Contact Page</a></li>
+                        <li><a class="dropdown-item" href="#">Comming Son</a></li>
+                        <li><a class="dropdown-item" href="#">Empty Cart</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary" id="botao-lista-shop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="">Shop</a>
+                      </button>
+                     
+                      <ul class="dropdown-menu"  >
+                        <div id="lista-shop">
+                          <div class="lista-shop-links"  >
+                            <li><h6 class="dropdown-item" href="#">Shop Layout</h6></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                          <li><a class="dropdown-item " href="#">Shop Fullwidth</a></li>
+                          <li><a class="dropdown-item" href="#">Shop Sidebar</a></li>
+                          <li><a class="dropdown-item" href="#">Shop 03 Columns</a></li>
+                          <li><a class="dropdown-item" href="#">Shop List Style</a></li>
+                          </div>                   
+                          <div class="lista-shop-links">
+                            <li><h6 class="dropdown-item" href="#">Product Layout</h6></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                          <li><a class="dropdown-item" href="#">Product Details</a></li>
+                          <li><a class="dropdown-item" href="#">Grouped</a></li>
+                          <li><a class="dropdown-item" href="#">Sticky Info</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Affiliate</a></li>
+                        </div>
+                        <div class="lista-shop-links">
+                            <li><h6 class="dropdown-item" href="#">Shop Pages</h6></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                          <li><a class="dropdown-item " href="#">My account</a></li>
+                          <li><a class="dropdown-item" href="#">Check Out</a></li>
+                          <li><a class="dropdown-item" href="#">Shopping Cart</a></li>
+                          <li><a class="dropdown-item" href="#">Wishilist</a></li>
+                          <li><a class="dropdown-item" href="#">Order tracking</a></li>
+                          <li><a class="dropdown-item" href="#">Login / Register</a></li>
+                        </div>
+                        <div class="lista-shop-image">
+                          <img src="../Assets/Images/logo.png"  alt="">
+                        </div>
+                       
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <a href="">Blog</a>
+                      </button>
+                      <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item " href="#">Blog Page</a></li>
+                        <li><a class="dropdown-item" href="#">Blog no sidebar</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Rigth sidebar</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary " type="button" aria-expanded="false">
+                       <a href="">Contact</a>
+                      </button>
+                    </div>
+                  </div>
+    
+                  <div class="nav-input">
+                    <input type="text" class=" " placeholder="Search products..." aria-label="Username"
+                      aria-describedby="basic-addon1">
+                    <button class=" bg-transparent border-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                      </svg>
+                    </button>
+                  </div>
+    
+                  <button class=" bg-transparent border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" wfill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                  </button>
+                  <button class="carrinho " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                  </button>
+                  <div class="offcanvas offcanvas-end offcanvasCarrinho" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <button type="button"  data-bs-dismiss="offcanvas" aria-label="Close">
+                      <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="conteudo-Carrinho">
+    
+                    
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+                    <div class="item-carrinho">
+                        <img src="../Assets/Images/Itens/Bone.jpg" alt="">
+                        <div class="carrinho-texto">
+                              <div class="carrinho-close">
+                                <h6>Awesome Mobile</h6>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x" viewBox="0 0 16 16">
+                                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                              </div>
+                              <h6>1 x $49.00</h6>
+                        </div>
+                    </div>
+                    <div class="item-carrinho">
+                      <img src="../Assets/Images/Itens/Mochila.jpg" alt="">
+                      <div class="carrinho-texto">
+                            <div class="carrinho-close">
+                              <h6>Awesome Mobile</h6>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                            <h6>1 x $49.00</h6>
+                      </div>
+                  </div>
+                  <h6>Subtotal : $98.00</h6>
+                  <div class="carrinhoBotoes">
+                      <button>View Cart </button>
+                      <button >Checkout </button>
+                  </div>
+                  </div>
+    
+                </div>
+                </div>
+                </div>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+            <div class="container-fluid m-0 p-0 containerContato">
+                <div class="containerConteudoContato">
+                    <div class="tituloContato">
+                        <h5>Contact Us</h5>
+                    </div>
+                    <div class="containerFormsInfos">
+                        <div class="formContato">
+                            <h5>GET A QUOTE</h5>
+                            <div class="inputsContato">
+                                <input type="text" placeholder="Your name *" name="" id="">
+                                <div class="containerEmailPhoneContato">
+                                    <input type="text" placeholder="Email address *" name="" id="">
+                                    <input type="text" placeholder="Your phone *" name="" id="">
+                                </div>
+                                <select >
+                                    <option value="Inquiry Type">Inquiry Type</option>
+                                    <option value="Inquiry 1">Inquiry 1</option>
+                                    <option value="Inquiry 2">Inquiry 2</option>
+                                  </select>
+                                <textarea name="" placeholder="Message" id=""></textarea>
+                            </div>
+                            <button>Send</button>
+                        </div>
+                        <div class="containerInfoRedes">
+                            <div class="containerGetInfo">
+                                <h4>GET INFO</h4>
+                                <div class="containerInfoEnderecos">
+                                    <div class="infoEnderecos">
+                                        <svg xmlns="http://www.w3.org/2000/svg"class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                                          </svg>
+                                        <h6>SkudMart Headquarter</h6>
+                                    </div>
+                                    <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                                </div>
+                                <div class="containerInfoEnderecos">
+                                    <div class="infoEnderecos">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                                          </svg>
+                                        <h6>SkudMart California</h6>
+                                    </div>
+                                    <p>8131 Budd Rd Terre Haute, IN 47805</p>
+                                </div>
+                            </div>
+                            <div class="containerRedesContato">
+                                <div class="redesItens">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                    </svg>
+                                    <p>info@example.com</p>
+                                </div>
+                                <div class="redesItens">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-phone" viewBox="0 0 16 16">
+                                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                    </svg>
+                                    <p>+812-466-7130</p>
+                                </div>
+                                <div class="containerRedesSociaisContato">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-google" viewBox="0 0 16 16">
+                                        <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container-fluid m-0 p-0 containerMapa ">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8943827816615!2d-46.69313722578687!3d-23.572236461989675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5776774592a9%3A0xafad307805963e69!2sAlmaviva%20Solutions!5e0!3m2!1spt-BR!2sbr!4v1743897321829!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid m-0 p-0">
+                <div class="container-input-email">
+                  <div class="conteudo-input-email">
+                    <h3>Sign Up For Newsletter</h3>
+                    <div class="input-group">
+                      <input placeholder="Enter your email address" type="text" class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)">
+                      <a class="input-group-text">Subscribe</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container-fluid m-0 p-0">
+          <div class="container-footer">
+            <div class="container text-center">
+              <div class="row align-items-center container-itens-footer">
+    
+    
+                <div class="col-lg-2 col-md-3 col-sm-12 imagem-logo-footer">
+                  <img src="../Assets/Images/logo.png" alt="">
+                </div>
+    
+    
+                <div class="col-lg-8 col-md-9 col-sm-12">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Quick Links</h5>
+                      <ul>
+                        <li>Our Blog</li>
+                        <li>About US</li>
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Useful Links</h5>
+                      <ul>
+                        <li>Service</li>
+                        <li>Affiliate</li>
+                        <li>Terms e Conditions</li>
+                        <li>Privacy Policy</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Experience App on Mobile</h5>
+                      <img src="../Assets/Images/Icons-App-Mobile/app-1.png" alt="Android">
+                      <img src="../Assets/Images/Icons-App-Mobile/app-2.png" alt="Apple">
+                    </div>
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Top Categories</h5>
+                      <ul>
+                        <li>Casual</li>
+                        <li>Sophisticated</li>
+                        <li>Artsy</li>
+                        <li>Preppy</li>
+                        <li>Accessories</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Latest Blogs</h5>
+                      <ul>
+                        <li>01. Lorem ipsum dolor sit...</li>
+                        <li>02. Consectetur adipiscing...</li>
+                        <li>03. Sed ut perspiciatis...</li>
+                        <li>04. At vero eos et accusamus...</li>
+                        <li>05. Dignissimos ducimus...</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 Lista-footer">
+                      <h5>Contact info</h5>
+                      <ul>
+                        <li>121 King Street, New York <br> 3000 USA</li>
+                        <li>Open time: 9:00 - 19:00, Monday - Friday</li>
+                        <li>Email: Demo@Store.com</li>
+                        <li>Phone: +12.345.678.43</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="texto-final-footer">
+                <p>CAPRICE©2020. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="../script.js"></script>
+      <script src="../Bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>
