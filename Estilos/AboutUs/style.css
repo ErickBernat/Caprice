@@ -1,0 +1,140 @@
+.containerAboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.tituloAboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+
+    h2{
+        border: none;
+        font-family: fontTitulo;
+        font-size: clamp(1rem,1.8rem,3rem);
+    }
+}
+
+.containerWelcomeAboutUs{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoWelcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    width: 95%;
+
+    video{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+.textoWelcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    h4{
+        border: none;
+        font-family: fontTitulo;
+        font-weight: bold;
+        font-size: clamp(1rem,1.2rem,3rem);
+    }
+    p{
+        color: #393939;
+        border: none;
+        font-family: fontTexto;
+        font-weight: 500;
+        font-size: clamp(0.5rem,0.8rem,3rem);
+    }
+
+  
+
+        button{
+            width:50px;
+            background-color: #810000;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+
+            svg{
+                width: 30px;
+                height: auto;
+                fill: white;
+            }
+        }
+}
+
+@media screen and (min-width:611px) {
+    .containerWelcomeAboutUs{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .textoWelcome{
+        gap: 10px;
+        width: 60%;
+        h4{
+            font-size: clamp(0.5rem,1.3rem,3rem);
+        }
+        p{
+            font-size: clamp(0.2rem,0.7rem,3rem);
+        }
+            button{
+                width:40px;
+                background-color: #810000;
+                height: 40px;
+            }
+    }
+}
+
+@media screen and (min-width:990px) {
+
+
+    .containerWelcomeAboutUs{
+        margin: 40px 0px !important;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .textoWelcome{
+        gap: 20px;
+        width: 80%;
+        h4{
+            font-size: clamp(1rem,2.7rem,4rem);
+        }
+        p{
+            font-size: clamp(0.5rem,1rem,3rem);
+        }
+            button{
+                width:60px;
+                height: 60px;
+            }
+    }
+
+    .tituloAboutUs{
+        height: 30vh;
+        h2{
+            border: none;
+            font-family: fontTitulo;
+            font-size: clamp(1rem,3rem,3rem) !important;
+        }
+    }
+}

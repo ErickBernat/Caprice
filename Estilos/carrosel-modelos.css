@@ -11,12 +11,10 @@
 
   .container-itens.dragging {
     cursor: grabbing;
-    scroll-behavior: auto; /* Desativa animação ao arrastar */
+    scroll-behavior: auto; 
 }
 
-.container-::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem */
-}
+
 
 
   .container-itens{
