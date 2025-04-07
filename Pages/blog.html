@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="../Estilos/Blog/style.css">
 </head>
-<body>
+<body onload="carregaNoticiasBlog()">
     <header>
         <div class="header-container container-fluid m-1">
     
@@ -390,40 +390,22 @@
                     <div class="tituloBlog">
                         <h2>Blog</h2>
                     </div>
-                    <div class="containerItensNoticias">
-                        <div class="itemNoticia">
-                             <img src="../Assets/Images/Modelos/categories-4.jpg" alt="">
-                             <h4>Always Look On The Bright Side Of Life</h4>
-                             <h6>By by John Snow - April 17,2019</h6>
-                             <p>Ut tempus leo sed magna hendrerit, non congue libero blandit.
-                               Vestibulum libero diam, convallis in arcu ut, semper vulputate
-                              dolor. Vestibulum ante ipsum primis in faucibus orci luctus et 
-                              ultrices posuere cubilia Curae usce luctus fringilla fermentum…</p>
-                              <button>Read More</button>
-                              <div class="bordaEspacamento">
-
-                              </div>
-                        </div>
-                        <div class="itemNoticia">
-                          <img src="../Assets/Images/Modelos/categories-4.jpg" alt="">
-                          <h4>Always Look On The Bright Side Of Life</h4>
-                          <h6>By by John Snow - April 17,2019</h6>
-                          <p>Ut tempus leo sed magna hendrerit, non congue libero blandit.
-                            Vestibulum libero diam, convallis in arcu ut, semper vulputate
-                           dolor. Vestibulum ante ipsum primis in faucibus orci luctus et 
-                           ultrices posuere cubilia Curae usce luctus fringilla fermentum…</p>
-                           <button>Read More</button>
-                           <div class="bordaEspacamento">
-
-                           </div>
-                     </div>
+                    <div class="containerDirecaoItens">
+                      <div id="containerItensNoticias" class="containerItensNoticias">
+                    <div class="itemNoticia">
+                      <img src="../Assets/Images/Blog/noticia1.avif" alt="">
+                      <h4>Always Look On The Bright Side Of Life</h4>
+                      <h6>By by John Snow - April 17,2019</h6>
+                      <p>Ut tempus leo sed magna hendrerit, non congue libero blandit.
+                        Vestibulum libero diam, convallis in arcu ut, semper vulputate
+                       dolor. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                       ultrices posuere cubilia Curae usce luctus fringilla fermentum…</p>
+                       <button>Read More</button>
+                       <div class="bordaEspacamento">
+                       </div>
+                 </div>
                     </div>
-                    <div class="mensagem">
-                      <p>“Highly customizable. Excellent design. Customer services has exceeded my expectation.
-                          They are quick to answer and even when they don’t know the answer right away.
-                          They’ll work with you towards a solution”</p>
-                        <h6>Michael Franklin</h6>
-                    </div>
+                   
                     <div class="containerItensInputCategorias">
                       <div class="inputBlog">
                         <input type="text" class=" " placeholder="SEARCH POST..." aria-label="Username"
@@ -500,15 +482,71 @@
                             <h6>Life Style</h6>
                             <h6>(12)</h6>
                           </div>
-                        
-                         
                         </div>
+                      </div>
+                      <div class="categoriaArchives">
+                        <div class="tituloArchives">
+                            <h2>Categories</h2>
+                        </div>
+                        <div class="containerItensArchives">
+                         
+                          <div class="itemCategorie">
+                            <select name="" id="">
+                              <option value="">June 2019</option>
+                              <option value="">December 2018</option>
+                              <option value="">November 2018</option>
+                            </select>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="categoriaTags">
+                        <div class="tituloTags">
+                            <h2>Tags</h2>
+                        </div>
+                        <div class="containerItensTags">
+                         
+                          <div class="itemTags">
+                            <div class="textoTag">  
+                              <p>Beauty,Life Style,Technology,Design,Fashion,
+                                Furniture,Travel,Photography,Motion Design</p>
+                            </div>
+                            
+                            <div class="videoTags">
+                              <video src="../Assets/Videos/5821502-hd_1920_1080_25fps.mp4" autoplay muted loop></video>
+                            </div>
+                           <div class="inputTags">
+                            <input type="text" placeholder="Enter your email address...">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope" viewBox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            </svg>
+                           </div>
+                           
+                          </div>
+                          </div>
+                          
                       </div>
                       
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
+        <section>
+          <div class="container-fluid m-0 p-0">
+              <div class="container-input-email">
+                <div class="conteudo-input-email">
+                  <h3>Sign Up For Newsletter</h3>
+                  <div class="input-group">
+                    <input placeholder="Enter your email address" type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <a class="input-group-text">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
       </main>
       <footer>
         <div class="container-fluid m-0 p-0">

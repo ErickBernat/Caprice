@@ -1,0 +1,24 @@
+{
+    "noticias":[
+    {
+        "url": "../Assets/Images/Blog/noticia2.avif",
+        "titulo":"Philosophy As A Science"
+    },
+    {
+        "url": "../Assets/Images/Blog/noticia3.avif",
+        "titulo":"Does Hydroderm Work"
+    },
+    {
+        "url": "../Assets/Images/Blog/noticia4.avif",
+        "titulo":"Sleek Hair Sedu Style"
+    },
+    {
+        "url": "../Assets/Images/Blog/noticia5.avif",
+        "titulo":"Sensible Beauty Tips For Enhancing Your Appearance"
+    },
+    {
+        "url": "../Assets/Images/Blog/noticia6.avif",
+        "titulo":"Producing Perfume From Home"
+    }
+  ]
+}
