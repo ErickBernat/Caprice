@@ -68,7 +68,10 @@
             outline: none;
             padding: 0px 20px;
         }
-
+        
+        select{
+            background-color: white;
+        }
         option{
             color: #5d5d5d;
         }
@@ -77,6 +80,8 @@
             padding: 20px;
             font-size: 0.8rem;
             height:15vh;
+            min-height: 150px;
+            max-height: 300px;
         }
 
     }
