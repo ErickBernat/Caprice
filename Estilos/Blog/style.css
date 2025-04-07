@@ -70,3 +70,121 @@
         margin-top: 10px!important;
     }
 }
+
+.mensagem{
+    width: 90%;
+    padding: 20px;
+    height: 50vh;
+    font-family: fonTitulo;
+    background-color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+
+    p{
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    h6{
+
+        font-family: fontBold;
+    }
+}
+
+.containerItensInputCategorias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inputBlog{
+ width: 90%;   
+ margin-top: 30px!important;
+ padding: 10px;
+ display: flex;
+ border: 1px solid #2f2f2f93;
+ align-items: center;
+ justify-content: center;
+
+ input{
+    font-size: 0.8rem;
+    color: black;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+ }
+
+ input::placeholder{
+    color: black;
+ }
+ button{
+
+    svg{
+        width: 15px;
+        fill: #2f2f2f93;
+    }
+ }
+}
+
+.categoriaPopularPost, .categoriaCategories{
+    width: 90%;
+}
+
+
+
+.tituloPopularPost, .tituloCategories{
+    margin: 30px 0px!important;
+    display: flex;
+    width: 100%;
+
+    h2{
+        width: 100%;
+        color: #535353;
+        border-bottom: 2px solid black ;
+        font-weight: 600;
+        font-family: fontTitulo;
+        text-transform: uppercase;
+        font-size: clamp(1rem,1.4rem,3rem);
+        padding: 5px 0px;
+    }
+}
+
+.containerItensPopularPost{
+    margin-bottom:  30px !important;
+    
+}
+
+.itemCategoria{
+    display: flex;
+    gap: 20px;
+    font-family: fontTitulo;
+    border-bottom: 1px solid #53535375;
+    padding: 10px;
+    img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+.itemCategorie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: fontTitulo;
+}
+
+.containerItensCategories{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
