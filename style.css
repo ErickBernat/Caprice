@@ -43,7 +43,7 @@
     align-items: center!important;
     justify-content: center!important;
     padding: 0;
-
+    
     img{
         width: 8rem;
         height: auto;
@@ -490,9 +490,12 @@
         align-items: center;
         justify-content: center;
 
+        a{
+            margin-right: 17%!important;
+        }
         img{
             width: clamp(7rem,10vw,15rem);
-            margin-right: 17%!important;
+          
         }
     }
 

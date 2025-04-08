@@ -1,9 +1,7 @@
-export async function carrega(caminho, id) {
-        const resposta = await fetch(caminho);
-        const html = await resposta.text();
-        document.querySelector(id).innerHTML += html;
-
-
+export async function carrega(url, id) {
+        const res = await fetch(url);
+        const html = await res.text();
+        document.querySelector(id).innerHTML = html;
 }
 
     
