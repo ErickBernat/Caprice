@@ -5,7 +5,6 @@ export async function iniciaNoticiasBlog() {
         fetch('../Data/noticias.json')
             .then(response => response.json())
             .then(data =>{
-                console.log(data.noticias)
                 let arrayNoticias = data.noticias;
     
                 arrayNoticias.forEach(item => {

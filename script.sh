@@ -1,5 +1,3 @@
-#!/bin/bash
-
 projeto="/opt/dev/projects/projetosEvidencia/Caprice"
 nginx="/var/www/html"
 

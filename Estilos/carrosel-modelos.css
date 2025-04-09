@@ -93,6 +93,7 @@
             border: none;
         }
         button:hover{
+            transition: 0.4s;
             background-color: #810000;
             color: white;
         }

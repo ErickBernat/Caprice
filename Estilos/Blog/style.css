@@ -73,6 +73,9 @@
         height: 7vh;
         border: 1px black solid;
     }
+    button:hover{
+        background-color: #810000;
+    }
 
     .bordaEspacamento{
         width: 100%;
